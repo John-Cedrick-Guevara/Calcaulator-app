@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "League Spartan", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .key1 {
+    @apply bg-keyBg1 text-3xl font-bold text-keyColor1 rounded p-4 border-b-4 border-keyShadow1 active:translate-y-0.5 active:border-none hover:bg-keyHover1;
+  }
+
+  .key2 {
+    @apply bg-keyBg2 text-3xl font-bold text-keyColor2 rounded p-4 border-b-4 border-keyShadow2 active:translate-y-0.5 active:border-none hover:bg-keyHover2;
+  }
+  .key3 {
+    @apply bg-keyBg3 text-3xl font-bold text-keyColor3 rounded p-4 border-b-4 border-keyShadow3 active:translate-y-0.5 active:border-none hover:bg-keyHover3;
+  }
+
+  .del1 {
+    @apply bg-delete1 text-white rounded p-4 font-bold text-2xl border-b-4 border-deleteShadow1 active:translate-y-0.5 active:border-none hover:bg-delHover1;
+  }
+
+  .del2 {
+    @apply bg-delete2 text-white rounded p-4 font-bold text-2xl border-b-4 border-deleteShadow2 active:translate-y-0.5 active:border-none hover:bg-delHover2;
+  }
+  .del3 {
+    @apply bg-delete3 text-white rounded p-4 font-bold text-2xl border-b-4 border-deleteShadow3 active:translate-y-0.5 active:border-none hover:bg-delHover3;
+  }
+
+  .equal1 {
+    @apply col-span-2 bg-equal1 py-5 rounded border-b-4 border-equalactive1 active:translate-y-0.5 active:border-none hover:bg-equalHover1
+  }
+  .equal2 {
+    @apply col-span-2 bg-equal2 py-5 rounded border-b-4 border-equalactive2 active:translate-y-0.5 active:border-none hover:bg-equalHover2
+  }
+  .equal3 {
+    @apply col-span-2 bg-equal3 py-5 rounded border-b-4 border-equalactive3 active:translate-y-0.5 active:border-none hover:bg-equalHover3
+  }
+}
